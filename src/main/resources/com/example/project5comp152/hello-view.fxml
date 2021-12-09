@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="629.0" prefWidth="443.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project5comp152.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TitledPane accessibleText="IBSN" animated="false" text="A Song of Ice and Fire" textAlignment="CENTER">
+     <content>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <children>
+               <Pane layoutX="-60.0" layoutY="-1.0" prefHeight="182.0" prefWidth="472.0">
+                  <children>
+                     <Text layoutX="72.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Written By George R. R. Martin" />
+                     <Text layoutX="75.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books : 6" />
+                     <Text layoutX="72.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book 1 pages : 694" />
+                     <Text layoutX="72.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book 2 pages : 768" />
+                     <Text layoutX="72.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book 3 pages : 973" />
+                     <Text layoutX="279.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book 4 pages : 753" />
+                     <Text layoutX="279.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book 5 pages : 1056" />
+                  </children>
+               </Pane>
+            </children>
+         </AnchorPane>
+     </content>
+   </TitledPane>
+   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0">
+      <children>
+         <TitledPane animated="false" prefHeight="308.0" prefWidth="403.0" text="Pov Characters">
+           <content>
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                     <Accordion>
+                       <panes>
+                         <TitledPane animated="false" text="Eddard Stark">
+                           <content>
+                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                           </content>
+                         </TitledPane>
+                         <TitledPane animated="false" text="Catelyn Stark">
+                           <content>
+                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                           </content>
+                         </TitledPane>
+                         <TitledPane animated="false" text="Daenerys Targaryen">
+                           <content>
+                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                       <Accordion layoutX="-1.0">
+                                         <panes>
+                                           <TitledPane animated="false" text="Tyrion Lanniste">
+                                             <content>
+                                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                             </content>
+                                           </TitledPane>
+                                           <TitledPane animated="false" text="Jon Snow">
+                                             <content>
+                                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                             </content>
+                                           </TitledPane>
+                                           <TitledPane animated="false" text="Bran Stark">
+                                             <content>
+                                               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                             </content>
+                                           </TitledPane>
+                                         </panes>
+                                       </Accordion>
+                                    </children>
+                                 </AnchorPane>
+                           </content>
+                         </TitledPane>
+                       </panes>
+                     </Accordion>
+                  </children>
+               </AnchorPane>
+           </content>
+         </TitledPane>
+      </children>
+   </AnchorPane>
+
+    <Label fx:id="welcomeText" />
+</VBox>
